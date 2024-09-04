@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: ov81iv75t-java-quarkus
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ov81iv75t-java-quarkus 
+  name: ov81iv75t-java-quarkus
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: ov81iv75t-java-quarkus 
